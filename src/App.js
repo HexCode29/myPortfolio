@@ -19,7 +19,7 @@ const App = () => {
 
  return(
     <div>
-        <div class="animation" style={{width: "100px", position: "fixed", zIndex: "100", marginRight: "100px"}}><Animation/></div>
+        <div className="animation" style={{width: "100px", position: "fixed", zIndex: "100", marginRight: "100px"}}><Animation/></div>
         <Header/>
         <About/>
         <Services/>

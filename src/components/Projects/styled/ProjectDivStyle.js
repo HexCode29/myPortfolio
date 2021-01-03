@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Section = styled.section `  
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../../images/camera.png);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../src/images/camera.png);
     padding: 10rem 0;
     color: var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);

@@ -25,25 +25,25 @@ const Projects = () => {
                <div className="overlay">
                  <a href="#">Real-Time Pizza Order Project</a>
                </div>
-               <img src="../../../images/projects/pizzaApp.png" alt="pizzaApp"/>
+               <img src="../../src/images/projects/pizzaApp.png" alt="pizzaApp"/>
              </div>
              <div className="card">
                 <div className="overlay">
                   <a href="#">Gallery using Firebase Storage API</a>
                 </div>
-                <img src="../../../images/projects/gallery.png" alt="galleryApp"/>
+                <img src="../../src/images/projects/gallery.png" alt="galleryApp"/>
              </div>
              <div className="card">
                 <div className="overlay">
                   <a href="#">Real-Time Chat-Application</a>
                 </div>
-                <img src="../../../images/projects/chatApp.png" alt="chatApp"/>
+                <img src="../../src/images/projects/chatApp.png" alt="chatApp"/>
              </div>
              <div className="card">
                 <div className="overlay">
                   <a href="#">Simple Url Shortner</a>
                 </div>
-                <img src="../../../images/projects/urlShortner.png" alt="urlShortApp"/>
+                <img src="../../src/images/projects/urlShortner.png" alt="urlShortApp"/>
              </div>
            </div>
          </div>

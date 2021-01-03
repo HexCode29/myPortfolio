@@ -3,19 +3,17 @@ import React from "react";
 
 // styled component
 import StyledHeader from "./styled/StyledHeader";
-// import Animation from "./Animation/animation";
 
 const Header = () => {
 
   return(
     <StyledHeader>
-      {/* <div class="animation" style={{width: "200px", position: "fixed", zIndex: "100"}}><Animation/></div> */}
       <div className="container">
         <nav id="main-nav">
             <div className="left">
               <div className="branding">
-                <a class="site-logo" href="/">
-                  <span class="logo-text">HEX</span>
+                <a className="site-logo" href="/">
+                  <span className="logo-text">HEX</span>
                 </a>
               </div>  
               <div className="nav-link">

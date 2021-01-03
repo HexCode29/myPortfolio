@@ -10,7 +10,7 @@ import {
 const Example = () => {
   const [isComplete, setIsComplete] = useState(false);
   const { scrollYProgress } = useViewportScroll();
-  const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
+  const yRange = useTransform(scrollYProgress, [0, 0.95], [0, 1]);
   const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
 
   useEffect(() => yRange.onChange(v => setIsComplete(v >= 1)), [yRange]);

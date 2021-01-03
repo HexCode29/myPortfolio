@@ -13,10 +13,10 @@ const Footer = () => {
             <span className="logo-text">HEX</span>
           </a>
         <div className="footer-socials">
-            <a href="https://bit.ly/39NXVmh" target="_blank"><img src="../../../icons/linkedin.svg" alt="linkedin"/></a>
-            <a href="https://twitter.com/HexCode29"><img src="../../../icons/twitter.svg" alt="twitter"/></a>
-            <a className="fb" href="https://www.facebook.com/AttitudeRunsDeep"><img src="../../../icons/facebook.svg" alt="facebook"/></a>
-            <a href="#"><img src="../../../icons/instagram.svg" alt="instagram"/></a>
+            <a href="https://bit.ly/39NXVmh" target="_blank"><img src="../../src/icons/linkedin.svg" alt="linkedin"/></a>
+            <a href="https://twitter.com/HexCode29"><img src="../../src/icons/twitter.svg" alt="twitter"/></a>
+            <a className="fb" href="https://www.facebook.com/AttitudeRunsDeep"><img src="../../src/icons/facebook.svg" alt="facebook"/></a>
+            <a href="#"><img src="../../src/icons/instagram.svg" alt="instagram"/></a>
         </div>
         <div className="copyright">
           Copy 2020 &copy; Hexcode29. All Right Reserved.
