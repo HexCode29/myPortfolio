@@ -33,7 +33,7 @@ const Header = () => {
             <h1>I am a Full-Stack Web <span>Developer</span></h1>
             <p> I can make website's both the front-end and back-end, using latest technologies like React, NodeJS etc. This also may include database, API or other integrations.</p>
             <div>
-              <a href="../../images/resume.pdf" download><button>Download CV</button></a>
+              <a href="src/images/resume.pdf" download><button>Download CV</button></a>
             </div>
           </div>
         </div>
