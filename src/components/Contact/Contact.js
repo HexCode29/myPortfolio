@@ -13,12 +13,12 @@ const Contact = () => {
 
         <div className="card-wrapper">
           <div className="card">
-            <img src="src/icons/smartphone.svg" alt="phone"/>
+            <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/b828201b84ebbba6314e6b8b836a74fee595d83b/src/icons/smartphone.svg" alt="phone"/>
             <h1>Call Me on</h1>
             <h6>0308-0073024</h6>
           </div>
           <div className="card">
-            <img src="src/icons/email.svg" alt="email"/>
+            <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/b828201b84ebbba6314e6b8b836a74fee595d83b/src/icons/email.svg" alt="email"/>
             <h1>Email Me At</h1>
             <h6>hexcode29@gmail.com</h6>
           </div>
