@@ -12,7 +12,7 @@ const Projects = () => {
     <>
       <Section classname="freelancer">
             <h1>I am also available for freelancer.</h1>
-            <a href="https://github.com/HexCode29/myPortfolio/blob/master/src/images/resume.pdf" download><button>Download CV</button></a>
+            <a href="https://github.com/HexCode29/myPortfolio/raw/master/src/images/resume.pdf" download><button>Download CV</button></a>
       </Section>
       
       <ProjectSection id="projects" className="projects">
