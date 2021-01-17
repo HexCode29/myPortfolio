@@ -207,6 +207,16 @@ const StyledHeader = styled.header `
       max-width: 1100px;
     }
   }
+
+  @media (max-width: 476px){
+    .container{
+      #main-nav{
+        .nav-link #projects{
+          display: none;
+        }
+      }
+    }
+  }
   
 `;
 
