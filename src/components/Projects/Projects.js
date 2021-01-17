@@ -35,7 +35,7 @@ const Projects = () => {
              </div>
              <div className="card">
                 <div className="overlay">
-                  <a href="#">Real-Time Chat-Application</a>
+                  <a href="https://hexcode-chat.netlify.app">Real-Time Chat-Application</a>
                 </div>
                 <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/chatApp.png" alt="chatApp"/>
              </div>
