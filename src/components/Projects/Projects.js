@@ -41,10 +41,10 @@ const Projects = () => {
              </div>
              <div className="card">
                 <div className="overlay">
-                  <a href="#">Simple Url Shortner</a>
+                  <a href="https://todox-712fa.web.app/" target="_blank">Todo-App Redux</a>
                 </div>
-                <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/urlShortner.png" alt="urlShortApp"/>
-             </div>
+                <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/redux-project.png" alt="Redux-App"/>
+             </div>            
            </div>
          </div>
       </ProjectSection>
