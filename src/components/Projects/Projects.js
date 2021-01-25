@@ -29,7 +29,7 @@ const Projects = () => {
              </div>
              <div className="card">
                 <div className="overlay">
-                  <a href="#">Gallery using Firebase Storage API</a>
+                  <a href="https://hex-gallery.web.app/" target="_blank">Gallery using Firebase Storage API</a>
                 </div>
                 <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/gallery.png" alt="galleryApp"/>
              </div>
