@@ -211,7 +211,7 @@ const StyledHeader = styled.header `
   @media (max-width: 476px){
     .container{
       #main-nav{
-        .nav-link #projects{
+        .nav-link #projects-link{
           display: none;
         }
       }
