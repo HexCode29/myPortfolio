@@ -4,11 +4,10 @@ import CertificateSection from "./styled/CertStyle";
 
 //assets
 
-// import Scrimba from "../../images/projects/Scrimba";
 
 const Certificate = () => {
   return(
-    <CertificateSection id="projects" className="projects">
+    <CertificateSection id="certificates">
          <div className="container">
            <h1><span>My</span> Certificates</h1>
 
