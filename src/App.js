@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import Projects from "./components/Projects/Projects";
+import Certificate from "./components/Certificates/Certificates";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Animation from "./components/Header/Animation/animation";
@@ -24,6 +25,7 @@ const App = () => {
         <About/>
         <Services/>
         <Projects/>
+        <Certificate/>
         <Contact/>
         <Footer/>
     </div>
