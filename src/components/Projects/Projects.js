@@ -41,9 +41,9 @@ const Projects = () => {
              </div>
              <div className="card">
                 <div className="overlay">
-                  <a href="https://todox-712fa.web.app/" target="_blank">Todo-App Redux</a>
+                  <a href="https://hexfurns.web.app/" target="_blank">Hex Furniture App</a>
                 </div>
-                <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/redux-project.png" alt="Redux-App"/>
+                <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/Screenshot 2023-08-20 160733.png" alt="Hex Furns"/>
              </div>            
            </div>
          </div>
