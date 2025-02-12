@@ -23,7 +23,7 @@ const Projects = () => {
            <div className="card-wrapper">
              <div className="card">
                <div className="overlay">
-                 <a href="#">Real-Time Pizza Order Project</a>
+                 <a href="#">Ecom.. Project using Node JS Socket.io and MongoDB</a>
                </div>
                <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/pizzaApp.png" alt="pizzaApp"/>
              </div>
