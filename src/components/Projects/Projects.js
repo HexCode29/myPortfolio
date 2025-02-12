@@ -37,7 +37,7 @@ const Projects = () => {
                 <div className="overlay">
                   <a href="https://jobpros.io/" target="_blank">Job Services Platform</a>
                 </div>
-                <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/chatApp.png" alt="chatApp"/>
+                <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/jobpros.png" alt="chatApp"/>
              </div>
              <div className="card">
                 <div className="overlay">
