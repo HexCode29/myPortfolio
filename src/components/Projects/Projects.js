@@ -17,7 +17,7 @@ const Projects = () => {
       
       <ProjectSection id="projects" className="projects">
          <div className="container">
-           <h1><span>My</span> Projects</h1>
+           <h1><span>Worked</span> Projects</h1>
            <p>I am provide high standard and clean website for your business using latest technologies.</p>
 
            <div className="card-wrapper">
@@ -35,7 +35,7 @@ const Projects = () => {
              </div>
              <div className="card">
                 <div className="overlay">
-                  <a href="https://hexcode-chat.netlify.app" target="_blank">Real-Time Chat-Application</a>
+                  <a href="https://jobpros.io/" target="_blank">Job Services Platform</a>
                 </div>
                 <img src="https://raw.githubusercontent.com/HexCode29/myPortfolio/master/src/images/projects/chatApp.png" alt="chatApp"/>
              </div>
