@@ -2,7 +2,9 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Download, MapPin } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons.jsx";
 import { marquee, profile, stats } from "../data.js";
-import photo from "../assets/shahzaib.jpg";
+import photoJpg from "../assets/portrait-840.jpg";
+import photoWebp420 from "../assets/portrait-420.webp";
+import photoWebp840 from "../assets/portrait-840.webp";
 
 const container = {
   hidden: {},
@@ -73,7 +75,21 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="photo-ring">
-            <img src={photo} alt="Portrait of Shahzaib Rao" width="420" height="420" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${photoWebp420} 420w, ${photoWebp840} 840w`}
+                sizes="(max-width: 860px) 60vw, 420px"
+              />
+              <img
+                src={photoJpg}
+                alt="Portrait of Shahzaib Rao"
+                width="420"
+                height="504"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div className="float-card fc-1">
             <strong>1000+</strong>

@@ -16,4 +16,4 @@ certificates and education. Colours, fonts and spacing are CSS variables at the 
 [`src/styles.css`](src/styles.css).
 
 - Resume PDF: `public/Shahzaib-Rao-Resume-2026.pdf` (replace the file, keep the name)
-- Profile photo: `src/assets/shahzaib.jpg`
+- Profile photo: `src/assets/portrait-840.webp` / `portrait-420.webp` (+ `portrait-840.jpg` fallback), used in the hero

@@ -30,7 +30,7 @@ export const nav = [
 export const stats = [
   { value: "5+", label: "Years of experience" },
   { value: "1000+", label: "Users on live products" },
-  { value: "5", label: "Major products shipped" },
+  { value: "6", label: "Major products shipped" },
   { value: "4", label: "Client regions: UK · EU · US · AU" },
 ];
 
@@ -104,6 +104,24 @@ export const projects = [
     icon: "gavel",
     hue: 38,
     featured: true,
+  },
+  {
+    name: "Fixersz",
+    tag: "CRM · Own product",
+    meta: "Built by me",
+    tagline: "CRM for Freelancers & Agencies",
+    description:
+      "A CRM I designed and built myself for freelancers and agencies, bringing payments, messaging, social and spreadsheet workflows together in one place.",
+    points: [
+      "Stripe for payments and Twilio for customer communication.",
+      "Meta integration and Google Sheets sync to connect leads and data with the tools teams already use.",
+    ],
+    stack: ["Stripe", "Twilio", "Meta", "Google Sheets", "CRM"],
+    url: "https://fixersz.com/",
+    icon: "workflow",
+    hue: 300,
+    featured: true,
+    reverse: true,
   },
   {
     name: "Squadly",

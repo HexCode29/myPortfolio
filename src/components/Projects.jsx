@@ -1,16 +1,23 @@
-import { ArrowUpRight, Gavel, Globe, HeartPulse, Users, Wallet } from "lucide-react";
+import { ArrowUpRight, Gavel, Globe, HeartPulse, Users, Wallet, Workflow } from "lucide-react";
 import Reveal from "./Reveal.jsx";
 import SectionHeading from "./SectionHeading.jsx";
 import { projects } from "../data.js";
 
-const icons = { gavel: Gavel, users: Users, wallet: Wallet, heart: HeartPulse, globe: Globe };
+const icons = {
+  gavel: Gavel,
+  users: Users,
+  wallet: Wallet,
+  heart: HeartPulse,
+  globe: Globe,
+  workflow: Workflow,
+};
 
 function ProjectCard({ project, index }) {
   const Icon = icons[project.icon];
   return (
     <Reveal
       delay={(index % 2) * 0.08}
-      className={`project ${project.featured ? "project-featured" : ""}`}
+      className={`project ${project.featured ? "project-featured" : ""} ${project.reverse ? "project-reverse" : ""}`}
     >
       <a
         href={project.url}
@@ -64,7 +71,7 @@ export default function Projects() {
       <div className="container">
         <SectionHeading eyebrow="Projects" title="Selected work">
           Products I’ve built and shipped for clients around the world — from auction platforms and
-          fintech dashboards to healthcare and community apps.
+          fintech dashboards to healthcare, community apps and my own CRM.
         </SectionHeading>
 
         <div className="projects-grid">
