@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahzaib Rao — Full Stack React Web &amp; App Developer</title>
+    <meta
+      name="description"
+      content="Shahzaib Rao is a Full Stack Software Engineer with 5+ years of experience building scalable SaaS, fintech and real-time web and mobile apps with React, Node.js, MongoDB and Firebase."
+    />
+    <meta name="author" content="Shahzaib Rao" />
+    <meta name="theme-color" content="#0a0a0b" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shahzaib Rao — Full Stack React Web & App Developer" />
+    <meta
+      property="og:description"
+      content="5+ years building scalable SaaS platforms, fintech systems and real-time apps for clients in the UK, EU, US and Australia."
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Apply the saved / system theme before first paint to avoid a flash.
+      try {
+        var saved = localStorage.getItem("theme");
+        var theme =
+          saved ||
+          (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
