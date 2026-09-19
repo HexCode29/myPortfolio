@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { nav, profile } from "../data.js";
+import { lockScroll } from "../lib/scroll.js";
 
 function useTheme() {
   const [theme, setTheme] = useState(
@@ -29,7 +30,7 @@ function useActiveSection(ids) {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((e) => e.isIntersecting && setActive(e.target.id));
+        entries.forEach((e) => e.isIntersecting && setActive(navIds.includes(e.target.id) ? e.target.id : ""));
       },
       { rootMargin: "-45% 0px -50% 0px" }
     );
@@ -49,7 +50,9 @@ function useActiveSection(ids) {
   return active;
 }
 
-const ids = nav.map((n) => n.id);
+const navIds = nav.map((n) => n.id);
+// Non-nav sections are observed too, so the highlight clears when passing them.
+const ids = ["top", "marquee", "manifesto", ...navIds];
 
 export default function Navbar() {
   const [theme, toggleTheme] = useTheme();
@@ -68,11 +71,12 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+    lockScroll(true);
     const onKey = (e) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     return () => {
-      document.body.style.overflow = "";
+      lockScroll(false);
       window.removeEventListener("keydown", onKey);
     };
   }, [open]);

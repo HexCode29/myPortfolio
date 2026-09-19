@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <section id="experience" className="section">
       <div className="container">
-        <SectionHeading eyebrow="Experience" title="Where I’ve worked" />
+        <SectionHeading eyebrow="Experience" title="Where I’ve worked" em="worked" />
 
         <ol className="timeline">
           {experience.map((job, i) => (

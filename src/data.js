@@ -28,10 +28,10 @@ export const nav = [
 ];
 
 export const stats = [
-  { value: "5+", label: "Years of experience" },
-  { value: "1000+", label: "Users on live products" },
-  { value: "6", label: "Major products shipped" },
-  { value: "4", label: "Client regions: UK · EU · US · AU" },
+  { to: 5, suffix: "+", label: "Years of experience" },
+  { to: 1000, suffix: "+", label: "Users on live products" },
+  { to: 6, suffix: "", label: "Major products shipped" },
+  { to: 4, suffix: "", label: "Client regions: UK · EU · US · AU" },
 ];
 
 export const skills = [

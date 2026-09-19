@@ -3,20 +3,21 @@ import { ArrowUpRight, Maximize2, X } from "lucide-react";
 import Reveal from "./Reveal.jsx";
 import SectionHeading from "./SectionHeading.jsx";
 import { certificates } from "../data.js";
+import { lockScroll } from "../lib/scroll.js";
 
 function Lightbox({ cert, onClose }) {
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && onClose();
-    document.body.style.overflow = "hidden";
+    lockScroll(true);
     window.addEventListener("keydown", onKey);
     return () => {
-      document.body.style.overflow = "";
+      lockScroll(false);
       window.removeEventListener("keydown", onKey);
     };
   }, [onClose]);
 
   return (
-    <div className="lightbox" role="dialog" aria-modal="true" aria-label={cert.title} onClick={onClose}>
+    <div className="lightbox" data-lenis-prevent role="dialog" aria-modal="true" aria-label={cert.title} onClick={onClose}>
       <button className="icon-btn lightbox-close" onClick={onClose} aria-label="Close">
         <X size={20} />
       </button>
@@ -41,7 +42,7 @@ export default function Certificates() {
   return (
     <section id="certificates" className="section">
       <div className="container">
-        <SectionHeading eyebrow="Certificates" title="Always learning">
+        <SectionHeading eyebrow="Certificates" title="Always learning" em="learning">
           Courses in React and UX design — click a certificate to view it full size.
         </SectionHeading>
 
@@ -50,6 +51,7 @@ export default function Certificates() {
             <Reveal key={c.title} delay={i * 0.06} className="cert">
               <button
                 className="cert-thumb"
+                data-cursor="view"
                 onClick={() => setActive(c)}
                 aria-label={`View ${c.title} certificate`}
               >

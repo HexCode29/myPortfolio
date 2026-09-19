@@ -15,7 +15,7 @@ export default function About() {
     <>
       <section id="about" className="section">
         <div className="container">
-          <SectionHeading eyebrow="About" title="Engineering with a product mindset">
+          <SectionHeading eyebrow="About" title="Engineering with a product mindset" em="mindset">
             {profile.summary}
           </SectionHeading>
 
@@ -35,7 +35,7 @@ export default function About() {
 
       <section id="skills" className="section section-alt">
         <div className="container">
-          <SectionHeading eyebrow="Skills" title="Tools I use to ship" />
+          <SectionHeading eyebrow="Skills" title="Tools I use to ship" em="ship" />
           <div className="skills-grid">
             {skills.map((group, i) => (
               <Reveal key={group.title} delay={(i % 4) * 0.06} className="skill-card">
