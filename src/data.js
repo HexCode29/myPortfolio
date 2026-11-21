@@ -100,7 +100,6 @@ export const projects = [
       "Stripe payment processing, optimised for performance, scalability, and data security.",
     ],
     stack: ["MongoDB", "Stripe", "Real-time", "Admin dashboard"],
-    url: "https://castle-auction.com/",
     icon: "gavel",
     hue: 38,
     featured: true,

@@ -67,9 +67,11 @@ function Card({ p, i }) {
             <li key={s}>{s}</li>
           ))}
         </ul>
-        <a href={p.url} target="_blank" rel="noreferrer" className="btn btn-glass btn-sm job-link">
-          Visit site <ArrowUpRight size={16} />
-        </a>
+        {p.url && (
+          <a href={p.url} target="_blank" rel="noreferrer" className="btn btn-glass btn-sm job-link">
+            Visit site <ArrowUpRight size={16} />
+          </a>
+        )}
       </div>
     </motion.article>
   );
